@@ -1,0 +1,16 @@
+{
+  "name": "machineel",
+  "version": "1.0.0",
+  "description": "MachineElements V1",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "npm": "^6.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Saltzman",
+  "license": "ISC"
+}
