@@ -82,6 +82,7 @@ header {
 	position: absolute;
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 35px 100px 0;
@@ -120,7 +121,7 @@ header nav li {
 }
 
 .hero .background-image {
-	background-image:linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0.4)),  url(../../assets/img/main/mill2.jpeg);
+	background-image:linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0.4)),  url(../../assets/img/main/mill2.png);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -248,4 +249,48 @@ footer p {
 	font-size: 14px;
 	opacity: 0.6;
 	align-self: center;
+}
+
+@media only screen and (max-width: 980px) {
+}
+
+@media only screen and (max-width: 768px) {
+	header{
+		padding: 35px 50px 0;
+	}
+
+	.about .grid li.small {
+	flex-basis: 100%;
+	}
+
+	.about .grid li.large {
+		flex-basis: 100%;
+	}
+
+	.packages .grid li {
+    padding: 10px;
+	}
+
+
+	
+}
+
+
+@media only screen and (max-width: 640px) {
+	header{
+		justify-content: center;
+	}
+
+	nav {
+		margin-top: 20px;
+	}
+
+	header h2 {
+		display: none;
+	}
+
+	.about{
+		padding: 50px 20px;
+	}
+
 }
