@@ -121,7 +121,8 @@ header nav li {
 }
 
 .hero .background-image {
-	background-image:linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0.4)),  url(../../assets/img/main/mill2.png);
+	/* background-image:linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0.4)),  url(../../assets/img/main/mill2.png); */
+	background-image: url(../../assets/img/main/mill2.jpeg);
 	position: absolute;
 	top: 0;
 	left: 0;
