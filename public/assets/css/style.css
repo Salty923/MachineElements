@@ -234,10 +234,10 @@ header nav li {
 footer {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	background-color: #607d8b;
 	color: #fff;
-	padding: 20px 0;
+	padding: 20px 20px;
 }
 
 footer ul {
@@ -306,9 +306,25 @@ footer p {
 		padding: 50px 20px;
 	}
 
+	.about .grid {
+		display: none;
+	}
+
 	.hero a.btn {
 	padding: 13px 17px;
 	font-size: 14px;
+	}
+
+    .packages{
+		padding: 30px 20px;
+	}
+
+	.packages .grid li {
+    flex-basis: 100%;
+	}
+
+    .contact{
+		padding: 30px 20px;
 	}
 
 }
