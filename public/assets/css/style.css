@@ -27,7 +27,7 @@ a:hover {
 }
 
 a.btn {
-	border-radius: 4px;
+	border-radius: 8px;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
@@ -147,7 +147,7 @@ header nav li {
 }
 
 .hero a.btn {
-	padding: 20px 46px;
+	padding: 15px 35px;
 }
 
 .hero-content-area {
@@ -264,11 +264,11 @@ footer p {
 	}
 
 	.about .grid li.small {
-	flex-basis: 100%;
+	flex-basis: 50%;
 	}
 
 	.about .grid li.large {
-		flex-basis: 100%;
+		flex-basis: 50%;
 	}
 
 	.packages .grid li {
@@ -293,8 +293,22 @@ footer p {
 		display: none;
 	}
 
+	.hero h1 {
+	font: bold 40px "Open Sans", sans-serif;
+	}
+
+	.hero h3 {
+	font: normal 20px "Open Sans", sans-serif;
+	margin-bottom: 40px;
+	}
+
 	.about{
 		padding: 50px 20px;
+	}
+
+	.hero a.btn {
+	padding: 13px 17px;
+	font-size: 14px;
 	}
 
 }
