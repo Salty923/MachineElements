@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.16.4",
-    "npm": "^6.4.1"
+    "npm": "^6.4.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,13 +1,25 @@
-var express = require("express");
-var app = express();
-var PORT = process.env.PORT || 3000;
+const express = require("express");
+const app = express();
+const path = require('path');
+const PORT = process.env.PORT || 3000;
+// app.set('view engine', 'html');
 
 //Use the express statc middlw ware to server static content for the app from the "public directory";
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.send('index.html');
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "index.html"));
+})
+
+app.get("/contact", (req, res) => {
+    console.log('route hit');
+    res.sendFile("contact.html");
+})
+
+app.get('/projects', (req, res) => {
+    res.sendFile('projects.html');
 });
+
 
 
 app.listen(PORT, function() {
