@@ -133,7 +133,8 @@ header nav li {
 	background-color: #80a3db;
 	-o-background-size: cover;
     -moz-background-size: cover;
-    -webkit-background-size: cover;
+	-webkit-background-size: cover;
+	opacity: .7;
 }
 
 .hero h1 {
