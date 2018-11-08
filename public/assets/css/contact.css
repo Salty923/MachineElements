@@ -11,6 +11,41 @@ html {
 	color: #555;
 }
 
+/* grid of three */
+
+.span-1-of-3 {
+	width: 32.26%;
+}
+
+.span-2-of-3 {
+	width: 66.13%;
+}
+
+.span-3-of-3 {
+	width: 100%;
+}
+
+/* mobile grid */
+
+@media only screen and (max-width: 480px){
+
+	.span-1-of-3 {
+	width: 100%;
+	}
+
+	.span-2-of-3 {
+		width: 100%;
+	}
+
+	.span-3-of-3 {
+		width: 100%;
+	}
+}
+
+
+
+
+
 ul,
 nav {
 	list-style: none;
