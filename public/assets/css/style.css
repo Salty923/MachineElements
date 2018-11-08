@@ -118,6 +118,7 @@ header nav li {
 	text-align: center;
 	min-height: 100vh;
 	color: #fff;
+	z-index: -2;
 }
 
 .hero .background-image {
@@ -249,8 +250,6 @@ footer p {
 	align-self: center;
 }
 
-@media only screen and (max-width: 980px) {
-}
 
 @media only screen and (max-width: 768px) {
 	header{
