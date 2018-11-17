@@ -1,13 +1,14 @@
 <?php
+
 /*
  *  CONFIGURE EVERYTHING HERE
  */
 
 // an email address that will be in the From field of the email.
-$from = $_POST['email'];
+$from = 'test@test.com';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'test@test.com';
+$sendTo = 'tngffl@comcast.net';
 
 // subject of the email
 $subject = 'New Message from the Contact Form from ' . $from;
@@ -42,7 +43,7 @@ try
         }
     }
 
-   /*  // All the neccessary headers for the email.
+    // All the neccessary headers for the email.
     $headers = array('Content-Type: text/plain; charset="UTF-8";',
         'From: ' . $from,
         'Reply-To: ' . $from,
@@ -50,10 +51,7 @@ try
     );
     
     // Send email
-    mail($sendTo, $subject, $emailText, implode("\n", $headers)); */
-    echo $sendTo;
-    echo $subject;
-    echo $emailText;
+    mail($sendTo, $subject, $emailText, implode("\n", $headers)); 
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
@@ -63,7 +61,7 @@ catch (\Exception $e)
 }
 
 
-/* // if requested by AJAX request return JSON response
+// if requested by AJAX request return JSON response
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
@@ -73,7 +71,8 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 }
 // else just display the message
 else {
+    header('refresh:2;  url=contact.html');
     echo $responseArray['message'];
-} */
-
+    exit();
+} 
 ?>
