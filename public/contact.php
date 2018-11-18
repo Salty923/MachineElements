@@ -69,14 +69,20 @@ catch (\Exception $e)
 
 
 // if requested by AJAX request return JSON response
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+/* if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
     header('Content-Type: application/json');
 
     echo $encoded;
-}
+} */
 // else just display the message
+
+if ($responseArray['type'] == 'success') {
+    // success redirect
+
+    header('Location: message-success.html');
+}
 else {
     header('refresh:2;  url=index.html');
     echo $responseArray['message'];
