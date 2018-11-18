@@ -120,7 +120,7 @@ header nav li {
 	position: relative;
 	justify-content: flex-start;
 	text-align: center;
-	min-height: 33vh;
+	min-height: 25vh;
 	color:white;
 	z-index: -2;
 }
