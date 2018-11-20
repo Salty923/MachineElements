@@ -84,9 +84,9 @@ if ($responseArray['type'] == 'success') {
     header('Location: message-success.html');
 }
 else {
-    header('refresh:2;  url=index.html');
-    echo $responseArray['message'];
-    exit();
+ // failure redirect
+
+ header('Location: message-fail.html');
 } 
 
 function test_input($data) {
