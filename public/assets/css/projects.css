@@ -235,3 +235,57 @@ footer p {
 	align-self: center;
 }
 
+@media only screen and (max-width: 640px) {
+	header{
+		justify-content: center;
+		padding-top: 10px;
+	}
+
+	nav {
+		margin-top: 20px;
+	}
+
+	header h2 {
+		display: none;
+	}
+
+	.hero h1 {
+	font: bold 40px "Open Sans", sans-serif;
+	margin-bottom: 5px;
+	}
+
+	.hero h3 {
+	font: normal 20px "Open Sans", sans-serif;
+	margin-bottom: 25px;
+	}
+
+	.about{
+		padding: 50px 20px;
+	}
+
+	.about .grid {
+		display: none;
+	}
+
+	.hero a.btn {
+	padding: 13px 17px;
+	font-size: 14px;
+	}
+
+    .packages{
+		padding: 30px 20px;
+	}
+
+	.packages .grid li {
+    flex-basis: 100%;
+	}
+
+    .contact{
+		padding: 20px 20px;
+	}
+
+	.head{
+		margin: 10px;
+	}
+
+}
