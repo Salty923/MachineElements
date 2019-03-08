@@ -59,10 +59,11 @@ try
         mail($sendTo, $subject, $emailText, implode("\n", $headers)); 
 
         $responseArray = array('type' => 'success', 'message' => $okMessage);
+
     }
 
 }
-catch (\Exception $e)
+catch (Exception $e)
 {
     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
 }
